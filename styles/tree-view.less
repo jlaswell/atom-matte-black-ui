@@ -1,3 +1,4 @@
+@import "colors";
 
 // Tree View
 // -------------------
@@ -5,6 +6,14 @@
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
 
+atom-workspace atom-panel-container.left div.atom-dock-mask atom-pane-container > atom-pane > ul.inset-panel li {
+  background-color: @black;
+  color: @black;
+  border-color: @black;
+  .title::before {
+    content: "";
+  }
+}
 
 .tree-view-resizer {
   border-right: 1px solid @base-border-color;
